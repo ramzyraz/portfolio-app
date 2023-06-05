@@ -13,6 +13,14 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        border: "hsl(var(--border))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+      },
+      fontFamily: {
+        fira: ['Fira Sans', 'sans-serif']
+      },
     },
   },
   plugins: [],

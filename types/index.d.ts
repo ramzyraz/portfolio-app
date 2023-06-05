@@ -15,6 +15,14 @@ export type SiteType = {
     }
 }
 
-export type NavType = {
-    mainNav: NavItem[]
+export type BioType = {
+    initial: string,
+    name: string,
+    bio: string,
+}
+
+export type IconType = {
+    name: string,
+    iconName: string,
+    iconLink: string
 }
