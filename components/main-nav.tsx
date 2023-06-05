@@ -1,7 +1,8 @@
 "use client"
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { AnimatePresence } from 'framer-motion'
 import { Icons } from "./icons";
 import { siteData } from "@/data/site";
 import { navData } from "@/data/nav";
@@ -10,6 +11,30 @@ import MobileNav from "./mobile-nav";
 export default function MainNav() {
     const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false)
     const [darkMode, setDarkMode] = useState<boolean>(false)
+
+    useEffect(() => {
+        const toggleTheme = () => {
+            if (localStorage.getItem('theme')) {
+                if (darkMode && localStorage.getItem('theme') === 'light') {
+                    document.documentElement.classList.add('dark')
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('theme', 'light');
+                }
+            } else {
+                if (!darkMode && document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                }
+            }
+        }
+
+        toggleTheme()
+    }, [darkMode])
     
     return (
         <nav className="sticky top-0 z-40 border-b">
@@ -45,7 +70,9 @@ export default function MainNav() {
                     <button className="md:hidden" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                         {showMobileMenu ? <Icons.close /> : <Icons.menu />}
                     </button>
-                    {showMobileMenu && <MobileNav /> }
+                    <AnimatePresence mode="wait">
+                        {showMobileMenu ? <MobileNav key="mobilemenu" /> : null }
+                    </AnimatePresence>
                 </>
             </div>
         </nav>
