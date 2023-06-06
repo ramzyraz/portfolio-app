@@ -8,11 +8,6 @@ export type SiteType = {
     name: string
     description: string
     url: string
-    links: {
-      linkedin: string
-      github: string
-      email: string
-    }
 }
 
 export type BioType = {
@@ -25,4 +20,19 @@ export type IconType = {
     name: string,
     iconName: string,
     iconLink: string
+}
+
+export type ExperienceType = {
+    company: string,
+    role: string,
+    date: string,
+    details: string[]
+}
+
+export type ProjectType = {
+    title: string,
+    desc: string, 
+    demo: string,
+    github: string,
+    tags: string[]
 }

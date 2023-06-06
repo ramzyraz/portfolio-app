@@ -27,7 +27,7 @@ export default function AnimationWrapper({ children } : { children: React.ReactN
     }, [isPresent, scope, animate, safeToRemove])
 
     return (
-        <div ref={scope} className="fixed top-11 right-1 p-6">
+        <div ref={scope} className="fixed top-11 right-1 p-6 md:hidden">
             {children}
         </div>
     )

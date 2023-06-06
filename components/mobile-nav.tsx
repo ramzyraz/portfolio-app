@@ -12,7 +12,7 @@ export default function MobileNav() {
                         key={idx}
                         href={`/#${item.idName}`} 
                         >
-                            <li className="px-4 py-2 hover:text-teal-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-medium">
+                            <li className="px-4 py-2 hover:text-teal-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-teal-300 font-medium">
                                 {item.title}
                             </li>
                         </Link>

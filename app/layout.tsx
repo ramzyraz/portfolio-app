@@ -2,6 +2,8 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { siteData } from '@/data/site'
 import MainNav from '@/components/main-nav'
+import Footer from '@/components/footer'
+import ScrollTop from '@/components/scroll-top'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,6 +34,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <MainNav />
         {children}
+        <ScrollTop />
+        <Footer />
       </body>
     </html>
   )

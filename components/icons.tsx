@@ -5,9 +5,11 @@ import {
     ChevronLeft,
     ChevronRight,
     ChevronDown,
+    ChevronUp,
     Command,
     CreditCard,
     Github,
+    ExternalLink,
     File,
     FileText,
     HelpCircle,
@@ -42,6 +44,7 @@ import {
     chevronLeft: ChevronLeft,
     chevronRight: ChevronRight,
     chevronDown: ChevronDown,
+    chevronUp: ChevronUp,
     trash: Trash,
     post: FileText,
     page: File,
@@ -65,5 +68,6 @@ import {
     monitor: MonitorSmartphone,
     linkedin: Linkedin,
     mail: Mail,
+    external: ExternalLink
   }
   

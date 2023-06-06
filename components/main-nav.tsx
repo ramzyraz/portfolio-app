@@ -49,7 +49,7 @@ export default function MainNav() {
                             key={idx}
                             href={`/#${item.idName}`} 
                         >
-                            <li className="rounded-full px-3 py-1 hover:bg-gray-100 hover:text-teal-500 dark:hover:bg-zinc-600">
+                            <li className="rounded-full px-3 py-1 hover:bg-gray-100 hover:text-teal-500 dark:hover:bg-zinc-600 dark:hover:text-teal-300">
                                 {item.title}
                             </li>
                         </Link>

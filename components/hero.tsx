@@ -31,7 +31,7 @@ export default function HeroSection() {
                         Ramez
                     </span>
                 </h2>
-                <p className="text-center leading-9 font-light text-lg px-5">
+                <p className="px-5 text-center leading-11 font-light text-base md:text-lg lg:max-w-[90rem]">
                     {bioData.bio}
                 </p>
                 <div className="flex items-center gap-5">
@@ -41,8 +41,7 @@ export default function HeroSection() {
                             href={`${icon.iconLink}`} 
                             target="_blank">
                             <button
-                                className="flex flex-col justify-center items-center rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-700
-                                p-1.5 lg:h-14 lg:w-14 h-14 w-14"
+                                className="p-1.5 h-14 w-14 lg:h-14 lg:w-14 flex flex-col justify-center items-center rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-700"
                             >
                                 {renderIcons(icon.name, 'w-9 h-9 p-1.5 bg-clip-text text-teal-500')}
                             </button>
@@ -50,7 +49,7 @@ export default function HeroSection() {
                     ))}
                 </div>
                 <div className="flex justify-center rounded-full shadow-sm px-4 py-3 bg-zinc-100 dark:bg-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-600">
-                    <Link href="/#portfolio">
+                    <Link href="/#projects">
                         <div className="flex items-center justify-center gap-3 font-normal text-base uppercase">
                             Check out my Work!
                             <Icons.chevronDown className="bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full w-5 h-5 py-0.5 text-white text-center" />
