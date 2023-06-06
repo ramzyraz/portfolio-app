@@ -1,5 +1,6 @@
 import { experienceData } from "@/data/experience";
 import ExperienceCard from "./experience-card";
+import AnimationWrapper from "../animations/view-animation-wrapper";
 
 export default function Experience() {
     return (
@@ -8,7 +9,11 @@ export default function Experience() {
                 <h2 className="text-4xl font-normal leading-loose mb-6 flex gap-1 place-items-center">
                     Experience
                 </h2>
-                <div className="relative">
+                <AnimationWrapper 
+                    style="relative"
+                    staggerValue={0.5}
+                    onceCheck={true}
+                >
                     <div className="rounded-sm border-r-4 dark:border-zinc-800 border-zinc-200 absolute h-full top-0" style={{ 'left': '9px' }}></div>
                     <ul className="list-none m-0 p-0">
                         {
@@ -17,7 +22,7 @@ export default function Experience() {
                             ))
                         }
                     </ul>
-                </div>
+                </AnimationWrapper>
             </div>
         </section>
     )

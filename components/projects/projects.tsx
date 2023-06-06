@@ -1,6 +1,4 @@
-import Link from "next/link";
 import { projectData } from "@/data/project";
-import { Icons } from "./icons";
 import Projectcard from "./project.card";
 
 export default function Projects() {

@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { siteData } from '@/data/site'
-import MainNav from '@/components/main-nav'
+import MainNav from '@/components/nav/main-nav'
 import Footer from '@/components/footer'
 import ScrollTop from '@/components/scroll-top'
 
