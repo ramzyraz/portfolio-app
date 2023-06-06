@@ -2,6 +2,8 @@
 
 > Built using Next.js and Tailwind
 
+The application is deployed at this [link](https://ramzyraz.vercel.app/).
+
 ## Technologies
 
 1. **Next.js** with App Router
@@ -11,7 +13,7 @@
 
 ## Assets used
 
-The yoga animation was picked from [LottieFiles](https://lottiefiles.com/82423-developer-yoga)
+The yoga animation was picked from [LottieFiles](https://lottiefiles.com/82423-developer-yoga).
 
 ## Running Locally
 1. Clone the repository and navigate into the cloned directory:
