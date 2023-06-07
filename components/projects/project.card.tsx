@@ -19,7 +19,7 @@ export default function Projectcard({ project, idx }: {
                 </div> 
                 <h3 className="flex place-content-between text-xl font-medium leading-loose">
                     {project.title}
-                    <span className="flex gap-1 mt-.5">
+                    <span className="flex gap-1 mt-0.5">
                         <Link 
                             href={project.github}
                             target="_blank" 
@@ -48,7 +48,7 @@ export default function Projectcard({ project, idx }: {
 const Tags = ({ tags }: { tags: string[] }) => {
     return (
         <>
-            <ul className="text-base flex gap-3 opacity-70">
+            <ul className="text-base gap-3 opacity-70 sm:flex">
                 {tags && tags?.length > 0 && tags.map((tag, idx) => <li key={tag + idx}>{tag}</li>)}
             </ul>
         </>
