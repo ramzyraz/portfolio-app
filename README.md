@@ -13,7 +13,8 @@ The application is deployed at this [link](https://ramzyraz.vercel.app/).
 
 ## Assets used
 
-The yoga animation was picked from [LottieFiles](https://lottiefiles.com/82423-developer-yoga).
+* The yoga animation was picked from [LottieFiles](https://lottiefiles.com/82423-developer-yoga).
+* The header logo was picked from [Freepik](https://www.freepik.com/free-vector/branding-identity-corporate-vector-logo-r-design_23214892.htm#query=letter%20r%20logo&position=1&from_view=keyword&track=ais).
 
 ## Running Locally
 1. Clone the repository and navigate into the cloned directory:
